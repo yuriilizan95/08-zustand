@@ -3,7 +3,7 @@ import { persist } from "zustand/middleware";
 import type { FormNotePayload } from "@/types/note";
 
 interface NoteDraftStoreProps {
-  draft: Partial<FormNotePayload>;
+  draft: FormNotePayload;
   setDraft: (note: Partial<FormNotePayload>) => void;
   clearDraft: () => void;
 }
